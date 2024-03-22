@@ -1,38 +1,20 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import { List, ListItem } from "@chakra-ui/react";
-import apiClient from "../services/api-client";
-
-interface RepositoryObject {
-  name: string;
-  url: string;
-  html_url: string;
-  languages_url: string;
-  contents_url: string
-}
-
-
+import useRepos from "./hooks/useRepos";
 
 function App() {
-  const [repositoryData, setRepositoryData] = useState<RepositoryObject[] | null>(
-    null
+  const { data } = useRepos();
+
+  return (
+    <List>
+      {data?.map((repo) => (
+        <>
+          <ListItem key={repo.id}>{repo.name}</ListItem>
+          <ListItem key={repo.id + "readme"}>readme</ListItem>
+        </>
+      ))}
+    </List>
   );
-
-  useEffect(() => {
-    const controller = new AbortController();
-    apiClient
-      .get("users/runraga/repos", { signal: controller.signal })
-      .then((res) => {
-        setRepositoryData(res.data);
-      });
-  }, []);
-
-  return <List>
-
-  {
-    repositoryData?.map((repo, i) => <ListItem key={i}>{repo.name}</ListItem>)
-  }
-  </List>
 }
 
 export default App;
