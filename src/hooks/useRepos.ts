@@ -1,5 +1,14 @@
 import useData from "./useData";
 
+export interface ReadmeObject {
+  title: string;
+  description: string;
+  languages: string;
+  overview: string;
+  future: string;
+  readme: string;
+}
+
 export interface RepositoryObject {
   name: string;
   url: string;
@@ -7,15 +16,12 @@ export interface RepositoryObject {
   languages_url: string;
   contents_url: string;
   id: number;
+  readme: ReadmeObject;
 }
 export interface ReadmeObject {
-  content: string
+  content: string;
 }
 
-const useRepos = () => useData<RepositoryObject>("users/runraga/repos");
-
-//could do another useData hook call for each repo returned
-
-
+const useRepos = () => useData<RepositoryObject>("/portfolio-be/public");
 
 export default useRepos;

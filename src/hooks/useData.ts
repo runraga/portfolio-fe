@@ -15,10 +15,9 @@ const useData = <T>(
       const controller = new AbortController();
       setIsLoading(true);
       apiClient
-        .get<T[]>(endpoint, { signal: controller.signal })
+        .get(endpoint, { signal: controller.signal })
         .then((res) => {
           setData(res.data);
-          console.log(res.data);
           setIsLoading(false);
         })
         .catch((err) => {

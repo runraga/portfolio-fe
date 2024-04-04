@@ -1,8 +1,6 @@
 import axios from "axios";
 
-
 export default axios.create({
-  baseURL: "https://api.github.com",
+  baseURL: "http://localhost:8080",
   timeout: 1000,
-  headers: { Accept: "application/vnd.github+json", "User-Agent": "runraga" },
 });
