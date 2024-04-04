@@ -8,7 +8,7 @@ A portfolio website build with React 18 and TypeScript to showcase GitHub reposi
 
 - TypeScript
 - React
-- GitHub Workflows
+- GitHub Workflow
 
 ### Overview
 

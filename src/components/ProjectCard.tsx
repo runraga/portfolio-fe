@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { RepositoryObject } from "../hooks/useRepos";
-import { FaPython, FaGithub, FaAws } from "react-icons/fa";
+import { FaPython, FaGithub, FaAws, FaReact } from "react-icons/fa";
 import { IconType } from "react-icons";
 import { SiTypescript, SiTerraform } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -24,11 +24,13 @@ const ProjectCard = ({ repo }: Props) => {
   const languageIcon: { [key: string]: IconType } = {
     Python: FaPython,
     Terraform: SiTerraform,
-    Typescript: SiTypescript,
+    TypeScript: SiTypescript,
     JavaScript: IoLogoJavascript,
     SQL: BiLogoPostgresql,
     "GitHub Workflow": FaGithub,
     "Amazon Web Services": FaAws,
+    React: FaReact
+
   };
   const { html_url, readme } = repo;
 
