@@ -1,31 +1,25 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
-import useRepos from "./hooks/useRepos";
-import ProjectCard from "./components/ProjectCard";
-
+import { Box } from "@chakra-ui/react";
+import AboutMe from "./components/AboutMe";
+import Details from "./components/Details";
+import ProjectSection from "./components/ProjectSection";
 
 function App() {
-  const { data } = useRepos();
+  
 
-  const breakpoints = {
-    base: `"nav" " main"`,
-    lg: `"nav nav" "aside main"`,
-  };
-  const columnWidths = {
-    base: "1fr",
-    lg: "200px 1fr",
-  };
+  // const breakpoints = {
+  //   base: `"nav" " main"`,
+  //   lg: `"nav nav" "aside main"`,
+  // };
+  // const columnWidths = {
+  //   base: "1fr",
+  //   lg: "1fr",
+  // };
   return (
-    <>
-      <Grid templateAreas={breakpoints} templateColumns={columnWidths}>
-        <GridItem area="main">
-          <Box paddingLeft={5}>
-            {data.map((repo) => {
-              return <ProjectCard repo={repo} key={repo.id} />;
-            })}
-          </Box>
-        </GridItem>
-      </Grid>
-    </>
+    <Box margin={5} width={{lg:"1000px",md:"750px", sm:"400px"}}>
+        <Details />
+        <AboutMe />
+        <ProjectSection />
+    </Box>
   );
 }
 

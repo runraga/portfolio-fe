@@ -29,15 +29,20 @@ const ProjectCard = ({ repo }: Props) => {
     SQL: BiLogoPostgresql,
     "GitHub Workflow": FaGithub,
     "Amazon Web Services": FaAws,
-    React: FaReact
-
+    React: FaReact,
   };
   const { html_url, readme } = repo;
 
   const languages = readme.languages.split("- ").slice(1);
 
   return (
-    <Card paddingRight={5}>
+    <Card
+      maxWidth="800px"
+      margin={5}
+      padding={3}
+      borderRadius={10}
+      
+    >
       <Heading>{readme.title}</Heading>
 
       <HStack marginY={1}>
@@ -48,7 +53,6 @@ const ProjectCard = ({ repo }: Props) => {
                 <Icon
                   boxSize={8}
                   as={languageIcon[lang.trim()]}
-                  color="gray.500"
                 />
               </span>
             </Tooltip>
@@ -62,10 +66,11 @@ const ProjectCard = ({ repo }: Props) => {
         alt="ELT project overview"
       />
 
-      <Text>{readme.description}</Text>
+      <Text padding={2}>{readme.description}</Text>
 
-      <Link href={html_url} isExternal>
-        GitHub Page <ExternalLinkIcon mx="2px" />
+      <Link  padding={2} href={html_url} isExternal>
+        GitHub Repo
+        <ExternalLinkIcon mx="5px" />
       </Link>
     </Card>
   );
