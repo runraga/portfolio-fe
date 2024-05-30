@@ -57,38 +57,39 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
   config,
-colors: {
-  text: {
-    primary: "#000000",
-  },
-  background: {
-    primary: "#FFFFFF",
-  },
-  hover: {
-    primary: "#A0AEC0",
-  },
-  accent: {
-    primary: "#3182CE",
-  },
-  border: {
-    primary: "#E2E8F0",
-  },
-},
-styles: {
-  global: {
-    "html, body": {
-      color: "text.primary",
-      backgroundColor: "background.primary",
-      lineHeight: "tall",
+  colors: {
+    text: {
+      primary: "#000000",
     },
-    a: {
-      color: "accent.primary",
-      _hover: {
-        color: "hover.primary",
+    background: {
+      primary: "#FFFFFF",
+    },
+    hover: {
+      primary: "#A0AEC0",
+    },
+    accent: {
+      primary: "#3182CE",
+    },
+    border: {
+      primary: "#E2E8F0",
+    },
+  },
+  styles: {
+    global: {
+      "html, body": {
+        color: "text.primary",
+        backgroundColor: "background.primary",
+        lineHeight: "tall",
+      },
+      
+      a: {
+        color: "accent.primary",
+        _hover: {
+          color: "hover.primary",
+        },
       },
     },
   },
-},
 });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

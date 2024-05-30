@@ -4,8 +4,6 @@ import Details from "./components/Details";
 import ProjectSection from "./components/ProjectSection";
 
 function App() {
-  
-
   // const breakpoints = {
   //   base: `"nav" " main"`,
   //   lg: `"nav nav" "aside main"`,
@@ -15,10 +13,10 @@ function App() {
   //   lg: "1fr",
   // };
   return (
-    <Box margin={5} width={{lg:"1000px",md:"750px", sm:"400px"}}>
-        <Details />
-        <AboutMe />
-        <ProjectSection />
+    <Box margin={5} >
+      <Details />
+      <AboutMe />
+      <ProjectSection />
     </Box>
   );
 }

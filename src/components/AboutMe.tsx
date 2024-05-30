@@ -1,4 +1,5 @@
 import { Card, Heading, Text, Stack } from "@chakra-ui/react";
+import headingSizes from "./HeadingSizes";
 
 const AboutMe = () => {
   return (
@@ -8,7 +9,7 @@ const AboutMe = () => {
       padding={3}
       borderRadius={10}
     >
-      <Heading>About Me</Heading>
+      <Heading size={headingSizes.h1}>About Me</Heading>
       <Stack>
         <Text>
           I have 15 years experience as a mass spectrometrist and laboratory

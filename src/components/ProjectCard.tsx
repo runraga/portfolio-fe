@@ -15,6 +15,7 @@ import { IconType } from "react-icons";
 import { SiTypescript, SiTerraform } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
+import headingSizes from "./HeadingSizes";
 
 interface Props {
   repo: RepositoryObject;
@@ -37,13 +38,13 @@ const ProjectCard = ({ repo }: Props) => {
 
   return (
     <Card
-      maxWidth="800px"
+      // maxWidth="800px"
       margin={5}
       padding={3}
       borderRadius={10}
       
     >
-      <Heading>{readme.title}</Heading>
+      <Heading size={headingSizes.h2}>{readme.title}</Heading>
 
       <HStack marginY={1}>
         {languages.map((lang) => {
@@ -61,7 +62,7 @@ const ProjectCard = ({ repo }: Props) => {
       </HStack>
 
       <Image
-        maxW={[300, 600]}
+        // maxW={[300, 600]}
         src={`${html_url}/blob/main/diagrams/headline.png?raw=true`}
         alt="ELT project overview"
       />

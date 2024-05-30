@@ -1,18 +1,19 @@
 import { Card, Heading, SimpleGrid, GridItem } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import useRepos from "../hooks/useRepos";
+import headingSizes from "./HeadingSizes";
 
 const ProjectSection = () => {
   const { data } = useRepos();
   return (
     <>
       <Card
-        // maxWidth="800px"
+        // maxWidth="800px" 
         margin={5}
-        padding={3}
+        paddingTop={3}
         borderRadius={10}
       >
-        <Heading textAlign={"center"}>Projects</Heading>
+        <Heading textAlign={"center"} size={headingSizes.h1}>Projects</Heading>
         <SimpleGrid
           // templateAreas={breakpoints}
           // templateColumns={columnWidths}

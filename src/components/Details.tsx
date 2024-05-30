@@ -1,22 +1,20 @@
 import {
   Card,
   Heading,
-  Grid,
-  VStack,
-  HStack,
   Link,
   Image,
   Icon,
   Text,
   SimpleGrid,
   GridItem,
-  Box,
+  Flex,
 } from "@chakra-ui/react";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail, MdImportContacts } from "react-icons/md";
 import portfolio from "../assets/portfolio.png";
 import { IconType } from "react-icons";
+import headingSizes from "./HeadingSizes";
 
 interface Link {
   icon: IconType;
@@ -47,6 +45,8 @@ const contactLinks: Link[] = [
   },
 ];
 
+
+
 const Details = () => {
   return (
     <Card
@@ -55,45 +55,58 @@ const Details = () => {
       padding={3}
       borderRadius={10}
     >
-      <Heading textAlign={"center"}>James Ault</Heading>
-      <Heading textAlign={"center"} size="md" paddingBottom={4}>
+      <Heading textAlign={"center"} size={headingSizes.h1}>
+        James Ault
+      </Heading>
+      <Heading
+        textAlign={"center"}
+        size={headingSizes.h2}
+        paddingBottom={4}
+      >
         Analytical Scientist | Data Engineer
       </Heading>
       <SimpleGrid
         alignItems={"center"}
         spacing={6}
         columns={{ base: 2, lg: 1 }}
+        justifyContent={{ base: "flex-start", lg: "center" }}
       >
         <GridItem order={{ base: 1, lg: 2 }}>
           <Image
-            maxW={185}
+            maxW={{ lg: 250, md: 185, base: 100 }}
             src={portfolio}
             alt="a portrait photo of James Ault"
             mx="auto"
+            borderRadius={10}
           />
         </GridItem>
-        <GridItem padding={{ base: 2, md: 4 }} order={{ base: 2, lg: 1 }}>
-          <SimpleGrid
-            columns={{ base: 1, lg: 4 }}
-            justifyContent={{ base: "flex-start", lg: "center" }}
-          >
-            {contactLinks.map((l) => {
-              return (
-                <Link
-                  href={l.url}
-                  key={l.url}
-                  display="flex"
-                  alignItems="center"
-                  marginBottom={{ base: 2, lg: 0 }}
-                >
-                  <Icon boxSize="25px" as={l.icon} marginRight={2} />
-                  <Text as="span" verticalAlign={"top"}>
-                    {l.text}
-                  </Text>
-                </Link>
-              );
-            })}
-          </SimpleGrid>
+        <GridItem order={{ base: 2, lg: 1 }}>
+          <Flex justify="center">
+            <SimpleGrid
+              columns={{ base: 1, lg: 4 }}
+              justifyContent={{ base: "flex-start", lg: "center" }}
+              alignItems={{ lg: "center" }}
+            >
+              {contactLinks.map((l) => {
+                return (
+                  <GridItem>
+                    <Link
+                      href={l.url}
+                      key={l.url}
+                      display="flex"
+                      alignItems="center"
+                      marginBottom={{ base: 2, lg: 0 }}
+                    >
+                      <Icon boxSize="25px" as={l.icon} marginRight={2} />
+                      <Text as="span" verticalAlign={"top"}>
+                        {l.text}
+                      </Text>
+                    </Link>
+                  </GridItem>
+                );
+              })}
+            </SimpleGrid>
+          </Flex>
         </GridItem>
       </SimpleGrid>
     </Card>
