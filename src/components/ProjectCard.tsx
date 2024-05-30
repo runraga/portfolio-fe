@@ -52,7 +52,7 @@ const ProjectCard = ({ repo }: Props) => {
             <Tooltip label={lang} key={lang}>
               <span>
                 <Icon
-                  boxSize={8}
+                  boxSize={{sm:4, md:6, lg:8}}
                   as={languageIcon[lang.trim()]}
                 />
               </span>
