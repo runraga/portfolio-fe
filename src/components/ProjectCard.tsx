@@ -38,7 +38,6 @@ const ProjectCard = ({ repo }: Props) => {
 
   return (
     <Card
-      // maxWidth="800px"
       margin={5}
       padding={3}
       borderRadius={10}
@@ -62,7 +61,6 @@ const ProjectCard = ({ repo }: Props) => {
       </HStack>
 
       <Image
-        // maxW={[300, 600]}
         src={`${html_url}/blob/main/diagrams/headline.png?raw=true`}
         alt="ELT project overview"
       />
