@@ -22,6 +22,6 @@ export interface ReadmeObject {
   content: string;
 }
 
-const useRepos = () => useData<RepositoryObject>("/portfolio-be");
+const useRepos = () => useData<RepositoryObject>("/portfolio-be/");
 
 export default useRepos;

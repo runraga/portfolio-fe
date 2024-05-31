@@ -61,6 +61,7 @@ const ProjectCard = ({ repo }: Props) => {
       </HStack>
 
       <Image
+        
         src={`${html_url}/blob/main/diagrams/headline.png?raw=true`}
         alt="ELT project overview"
       />
