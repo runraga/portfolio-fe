@@ -13,7 +13,7 @@ const useData = <T>(
   useEffect(
     () => {
       const controller = new AbortController();
-      document.title = "Portfolio"
+
       setIsLoading(true);
       apiClient
         .get(endpoint, { signal: controller.signal })
