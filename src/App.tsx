@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-   document.title = "Portfolio";
+    document.title = "Portfolio";
   }, []);
   // const breakpoints = {
   //   base: `"nav" " main"`,
@@ -17,7 +17,7 @@ function App() {
   //   lg: "1fr",
   // };
   return (
-    <Box margin={5}>
+    <Box margin={5} maxWidth="1200px">
       <Details />
       <AboutMe />
       <ProjectSection />
