@@ -12,23 +12,26 @@ const AboutMe = () => {
       <Heading size={headingSizes.h1}>About Me</Heading>
       <Stack>
         <Text>
-          I have 15 years experience as a mass spectrometrist and laboratory
-          manager. As part of developing in these roles, I have learnt new
-          skills in software development to create bespoke solutions for more
-          efficient lab operation, strategic decision making and efficient
-          processing of large scientific data sets from advanced structural MS
-          platforms.
+          Ever since I was a kid I've loved solving puzzles. Then it was
+          matchsticks or maths problems set by my dad. As a structural biologist
+          and lab manager the puzzle has been in handling, processing and
+          interpreting complex data to advance scientific knowledge and aid
+          strategic decision making.
         </Text>
         <Text>
-          In February 2024 I completed a three month data engineering bootcamp
-          with Northcoders.
+          Learning to code has greatly aided in leveraging this data to its maximum
+          potential and given a huge boost to productivity and sense of
+          achievement. Consequently I decided to put coding/data engineering at
+          the centre of my future career plans. I completed a three month data
+          engineering bootcamp with Northcoders in February 2024 which has
+          provided an invaluable foundation to my career 'pivot'.
         </Text>
         <Text>
-          I now wish to combine my data engineering, lab management and
-          structural biology skills to develop innovative solutions in data
-          science focussing on big data to enable scientifically sound
-          conclusions to allow advancements in scientific research and
-          operational efficincy.
+          I am now looking to combine my structural biology and lab management
+          skills with software development to develop innovative
+          solutions in data science, focussing on big data to help scientists
+          draw sound conclusions advancing scientific research and operational
+          efficiency.
         </Text>
       </Stack>
     </Card>
