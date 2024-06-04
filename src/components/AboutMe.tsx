@@ -28,7 +28,7 @@ const AboutMe = () => {
         </Text>
         <Text>
           I am now looking to combine my structural biology and lab management
-          skills with software development to develop innovative
+          skills with software development to find innovative
           solutions in data science, focussing on big data to help scientists
           draw sound conclusions advancing scientific research and operational
           efficiency.
