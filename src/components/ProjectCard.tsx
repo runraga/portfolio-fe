@@ -37,12 +37,7 @@ const ProjectCard = ({ repo }: Props) => {
   const languages = readme.languages.split("- ").slice(1);
 
   return (
-    <Card
-      margin={5}
-      padding={3}
-      borderRadius={10}
-      
-    >
+    <Card margin={5} padding={3} borderRadius={10}>
       <Heading size={headingSizes.h2}>{readme.title}</Heading>
 
       <HStack marginY={1}>
@@ -51,7 +46,7 @@ const ProjectCard = ({ repo }: Props) => {
             <Tooltip label={lang} key={lang}>
               <span>
                 <Icon
-                  boxSize={{sm:4, md:6, lg:8}}
+                  boxSize={{ sm: 4, md: 6, lg: 8 }}
                   as={languageIcon[lang.trim()]}
                 />
               </span>
@@ -59,16 +54,15 @@ const ProjectCard = ({ repo }: Props) => {
           );
         })}
       </HStack>
-
-      <Image
-        
-        src={`${html_url}/blob/main/diagrams/headline.png?raw=true`}
-        alt="ELT project overview"
-      />
-
+      <Card margin={2} padding={1} borderRadius={10}>
+        <Image
+          src={`${html_url}/blob/main/diagrams/headline.png?raw=true`}
+          alt="ELT project overview"
+        />
+      </Card>
       <Text padding={2}>{readme.description}</Text>
 
-      <Link  padding={2} href={html_url} isExternal>
+      <Link padding={2} href={html_url} isExternal>
         GitHub Repo
         <ExternalLinkIcon mx="5px" />
       </Link>
