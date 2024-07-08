@@ -40,7 +40,7 @@ const contactLinks: Link[] = [
   },
   {
     icon: MdImportContacts,
-    url: "https://portfolio.helmfarm.com/cv/cv.pdf",
+    url: "./cv/cv.pdf",
     text: "Download CV",
   },
 ];
