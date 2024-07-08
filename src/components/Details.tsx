@@ -63,7 +63,7 @@ const Details = () => {
         size={headingSizes.h2}
         paddingBottom={4}
       >
-        Analytical Scientist | Data Engineer
+        Mass Spectrometrist | Data Engineer
       </Heading>
       <SimpleGrid
         alignItems={"center"}
