@@ -15,6 +15,7 @@ import { IconType } from "react-icons";
 import { SiTypescript, SiTerraform } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiCsharp } from "react-icons/si";
 import headingSizes from "./HeadingSizes";
 
 interface Props {
@@ -31,6 +32,7 @@ const ProjectCard = ({ repo }: Props) => {
     "GitHub Workflow": FaGithub,
     "Amazon Web Services": FaAws,
     React: FaReact,
+    "C#": SiCsharp,
   };
   const { html_url, readme } = repo;
 
