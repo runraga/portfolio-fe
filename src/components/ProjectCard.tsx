@@ -32,7 +32,7 @@ const ProjectCard = ({ repo }: Props) => {
     "GitHub Workflow": FaGithub,
     "Amazon Web Services": FaAws,
     React: FaReact,
-    "C#": SiCsharp,
+    "C-Sharp": SiCsharp,
   };
   const { html_url, readme } = repo;
 
