@@ -29,7 +29,7 @@ const useData = <T>(
       return () => controller.abort();
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    dependencies ? [...dependencies] : []
+    dependencies || []
   );
   return { data, error, isLoading };
 };
