@@ -38,11 +38,11 @@ const contactLinks: Link[] = [
     url: "mailto:j.ault@helmfarm.com",
     text: "Email",
   },
-  {
-    icon: MdImportContacts,
-    url: "./cv/cv.pdf",
-    text: "Download CV",
-  },
+  // {
+  //   icon: MdImportContacts,
+  //   url: "./cv/cv.pdf",
+  //   text: "Download CV",
+  // },
 ];
 
 
