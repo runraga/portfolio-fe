@@ -28,8 +28,8 @@ const AboutMe = () => {
           invaluable foundation to my career 'pivot'.
         </Text>
         <Text>
-          I am now looking to combine my structural biology and lab management
-          skills with software development and data engineering to find
+          I am now looking to combine my skills gained as a structural biologist
+          and lab manager with software development and data engineering to find
           innovative solutions to real-world problems of the highest complexity.
         </Text>
       </Stack>
