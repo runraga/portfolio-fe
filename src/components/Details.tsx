@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-// import { MdEmail, MdImportContacts } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import portfolio from "../assets/portfolio.png";
 import { IconType } from "react-icons";
 import headingSizes from "./HeadingSizes";
@@ -45,8 +45,6 @@ const contactLinks: Link[] = [
   // },
 ];
 
-
-
 const Details = () => {
   return (
     <Card
@@ -58,11 +56,7 @@ const Details = () => {
       <Heading textAlign={"center"} size={headingSizes.h1}>
         James Ault
       </Heading>
-      <Heading
-        textAlign={"center"}
-        size={headingSizes.h2}
-        paddingBottom={4}
-      >
+      <Heading textAlign={"center"} size={headingSizes.h2} paddingBottom={4}>
         Mass Spectrometrist | Data Engineer
       </Heading>
       <SimpleGrid
