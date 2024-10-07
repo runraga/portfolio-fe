@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { MdEmail, MdImportContacts } from "react-icons/md";
+// import { MdEmail, MdImportContacts } from "react-icons/md";
 import portfolio from "../assets/portfolio.png";
 import { IconType } from "react-icons";
 import headingSizes from "./HeadingSizes";
