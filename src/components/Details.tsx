@@ -24,9 +24,9 @@ interface Link {
 
 const contactLinks: Link[] = [
   {
-    icon: FaLinkedin,
-    url: "https://www.linkedin.com/in/james-ault-226907bb/",
-    text: "LinkedIn",
+    icon: MdEmail,
+    url: "mailto:j.ault@helmfarm.com",
+    text: "Email",
   },
   {
     icon: FaGithub,
@@ -34,10 +34,12 @@ const contactLinks: Link[] = [
     text: "GitHub",
   },
   {
-    icon: MdEmail,
-    url: "mailto:j.ault@helmfarm.com",
-    text: "Email",
+    icon: FaLinkedin,
+    url: "https://www.linkedin.com/in/james-ault-226907bb/",
+    text: "LinkedIn",
   },
+
+
   // {
   //   icon: MdImportContacts,
   //   url: "./cv/cv.pdf",
@@ -77,19 +79,20 @@ const Details = () => {
         <GridItem order={{ base: 2, lg: 1 }}>
           <Flex justify="center">
             <SimpleGrid
-              columns={{ base: 1, lg: 4 }}
+              columns={{ base: 1, lg: 3 }}
               justifyContent={{ base: "flex-start", lg: "center" }}
               alignItems={{ lg: "center" }}
             >
               {contactLinks.map((l) => {
                 return (
-                  <GridItem>
+                  <GridItem marginRight="0">
                     <Link
                       href={l.url}
                       key={l.url}
                       display="flex"
                       alignItems="center"
                       marginBottom={{ base: 2, lg: 0 }}
+                      marginRight={{ base: 2, lg: 5 }}
                     >
                       <Icon boxSize="25px" as={l.icon} marginRight={2} />
                       <Text as="span" verticalAlign={"top"}>
