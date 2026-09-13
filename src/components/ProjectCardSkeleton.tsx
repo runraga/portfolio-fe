@@ -17,7 +17,8 @@ const ProjectCardSkeleton = () => {
         <SkeletonCircle size="10" />
         <SkeletonCircle size="10" />
       </HStack>
-      <SkeletonText height="200" />
+      <SkeletonText height="100" />
+      <SkeletonText height="100" />
     </Card>
   );
 };

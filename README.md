@@ -18,3 +18,4 @@ This simple, reponsive portfolio website was developed to showcase projects I ha
 
 - load project text and graphic separately using chakra-ui skeletons.
 - Display a message if there is any problem/error with the API backend.
+- Add a section for keyword skills.

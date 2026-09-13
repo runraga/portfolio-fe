@@ -8,14 +8,7 @@ function App() {
   useEffect(() => {
     document.title = "Portfolio";
   }, []);
-  // const breakpoints = {
-  //   base: `"nav" " main"`,
-  //   lg: `"nav nav" "aside main"`,
-  // };
-  // const columnWidths = {
-  //   base: "1fr",
-  //   lg: "1fr",
-  // };
+
   return (
     <Box margin={5} maxWidth="1200px">
       <Details />

@@ -14,7 +14,7 @@ export interface RepositoryObject {
   url: string;
   html_url: string;
   languages_url: string;
-  contents_url: string;
+  contents_url: string;   
   id: number;
   readme: ReadmeObject;
 }
