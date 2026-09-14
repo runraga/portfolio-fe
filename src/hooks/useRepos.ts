@@ -14,7 +14,7 @@ export interface RepositoryObject {
   url: string;
   html_url: string;
   languages_url: string;
-  contents_url: string;   
+  contents_url: string;
   id: number;
   readme: ReadmeObject;
 }
@@ -22,6 +22,6 @@ export interface ReadmeObject {
   content: string;
 }
 
-const useRepos = () => useData<RepositoryObject>("/portfolio-be/");
+const useRepos = () => useData<RepositoryObject>("/api/projects");
 
 export default useRepos;
